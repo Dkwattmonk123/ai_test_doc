@@ -22,6 +22,10 @@ Source: `ASSIGNMENT.md` (present in commit `84cb1a6`, removed in `5f58e52` — r
 
 Bonus: do **both** 3a and 3b; make the export async.
 
+> **PDF vs. repo (important).** The assignment PDF (generic Google Doc) says Part 3c should use the *"official `airtable` **npm** package"* and references `src/lib/airtable-mock.ts`. The **actual cloned repo is Django/Python**: `pyairtable` is already pinned in `backend/requirements.txt`, the export endpoint is `POST /api/projects/:id/export` in `backend/projects/views.py`, and the repo README references `backend/projects/airtable_mock.py`. **Follow the repo** — Python + `pyairtable`. The PDF's npm wording is template drift; the repo and its README are the real spec.
+
+> **➡️ For the exact code to type (OLD → NEW, per file and function), see [`CODE_CHANGES.md`](CODE_CHANGES.md).** This guide explains *why*; `CODE_CHANGES.md` is the copy-while-recording reference.
+
 > ⚠️ **Pre-commit hook.** `.git-hooks/pre-commit` auto-captures AI tool logs into `.ai-conversations/`. `bin/setup` wires it via `git config core.hooksPath .git-hooks`. This is disclosed and intentional — leave it on; it is part of the evaluation. It never blocks a commit (`exit 0`).
 
 ---
